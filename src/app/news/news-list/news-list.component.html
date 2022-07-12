@@ -1,1 +1,15 @@
-<article *ngFor="let new of news">{{new.title}}</article>
+<div class="news container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <article *ngFor="let article of news" class='article'>
+        <h5>{{article.title}}</h5>
+        <img src='{{article.media}}' alt='{{article.title}}' class='img-fluid'>
+        <p>{{article.summary}}</p>
+        <div class="row justify-content-between">
+          <div class="col-6 date">{{article.published_date}}</div>
+          <div class="col-6 author">{{article.author}}</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
