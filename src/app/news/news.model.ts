@@ -22,5 +22,8 @@ export interface Article {
 export interface ArticlesResponse {
   articles: Article[];
   status: string;
-  // Add more properties from response
+  total_hits: number;
+  page: number;
+  total_pages: number;
+  page_size: number;
 }
